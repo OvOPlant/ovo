@@ -153,4 +153,11 @@
         "advanced": false,
         "url": "dvd.js"
     }
+    "moveflag": {
+        "name": "MoveFlag",
+        "author": "OvOPlant",
+        "description": "Move the flag by changing x and y variables.",
+        "advanced": false,
+        "url": "moveflag.js"
+    }
 }
