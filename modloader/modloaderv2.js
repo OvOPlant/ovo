@@ -1,6 +1,6 @@
 (async () => {
     // Get mods
-    const mods = await fetch("/mods/v2.json").then(r => r.json());
+    const mods = await fetch("modloader/mods/v2.json").then(r => r.json());
     
     // Get runtime
     var c3interface;
