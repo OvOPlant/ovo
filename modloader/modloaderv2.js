@@ -159,7 +159,7 @@
         },
       
         getURLName(url) {
-            return url.substring(url.lastIndexOf("/")+1).replace(/\.[^/.]+$/, "");
+            return url.split("/").pop().split(".").slice(0, -1).join(".");
         },
       
         getModURL(name) {
