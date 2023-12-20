@@ -19,7 +19,6 @@
     var downy;
     var scale;
     var dead;
-    var sborder = null;
     var dborder = null;
     var bordercheck = null;
     let notify = (title, text, image = "https://ovoplant.github.io/ovo/versions/reverse/electric.png") => {
@@ -34,7 +33,7 @@
     };
     let behaviors = {
         init() {
-            runtime.tickMe(showPosition);
+            runtime.tickMe(showProperties);
             document.addEventListener("keydown", (event) => {
                 if (event.code === "KeyY") {
                     if (event.shiftKey) {
@@ -472,7 +471,7 @@
         }
     }
     
-    let showPosition = {
+    let showProperties = {
         tick() {
             let playerInstances = runtime.types_by_index
                 .filter(
